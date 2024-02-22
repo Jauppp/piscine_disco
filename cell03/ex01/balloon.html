@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tab</title>
+	<style>
+		#balloon {
+			height: 200px;
+			width: 200px;
+			background-color: #ae2012;
+			border-radius: 50%;
+			margin-left: 10%;
+			margin-top: 10%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="balloon">
+	</div>
+	<script>
+		let balloon = document.getElementById('balloon');
+		let counter = 0;
+		let current_color = 0;
+
+		balloon.addEventListener('click', function onClick(event) {
+			change_color();
+			gain_weight();
+		});
+
+		balloon.addEventListener('mouseout', function mouseout(event){
+			loose_weight();
+		});
+
+		function change_color() {
+			if (current_color == 0) {
+				balloon.style.backgroundColor = '#606c38';
+				current_color = 1;
+			}
+			else if (current_color == 1) {
+				balloon.style.backgroundColor = '#0096c7';
+				current_color = 2;
+			}
+			else if (current_color == 2) {
+				balloon.style.backgroundColor = '#ae2012';
+				current_color = 0;
+			}
+		}
+
+		function gain_weight() {
+			w = parseInt(balloon.style.width);
+			h = parseInt(balloon.style.height);
+			if (counter == 0) {
+				balloon.style.width = (200 + 10) + 'px';
+				balloon.style.height = (200 + 10) + 'px';
+				counter++;
+			}
+			if (counter > 0) {
+				balloon.style.width = (w + 10) + 'px';
+				balloon.style.height = (h + 10) + 'px';
+				counter++;
+			}
+			if (w >= 420) {
+				balloon.style.width = 200 + 'px';
+				balloon.style.height = 200 + 'px';
+				counter = 0;
+			}
+			console.log('size : ' + balloon.style.width);
+		}
+
+		function loose_weight() {
+			size_w = parseInt(balloon.style.width);
+			size_h = parseInt(balloon.style.height);
+
+			balloon.style.width = (size_w - 5) + 'px';
+			balloon.style.height = (size_h - 5) + 'px';
+			console.log('size : ' + balloon.style.width);
+
+		}
+	</script>
+</body>
+
+</html>

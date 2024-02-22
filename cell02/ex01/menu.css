@@ -1,0 +1,35 @@
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+	border: 0.1em black solid;
+	font-size: 2vw;
+	margin: auto;
+	padding: 3%;
+	width: 40vw;
+}
+
+.menu {
+	width: 40vw;
+}
+
+#elem_container {
+	border: 0.1em black solid;
+	box-shadow: 0.8em 0.8em palevioletred;
+	display: none;
+	font-size: 2vw;
+	left: 5%;
+	list-style: none;
+	padding: 3%;
+	position: relative;
+	width: 40vw;
+}
+
+#elem:hover {
+	background-color: pink;
+}
+
+#menu:hover #elem_container {
+	display: inline-block;
+}
