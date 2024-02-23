@@ -343,17 +343,29 @@ section {
 	padding : 1%;
 }
 
-.resume .nav-li {
-	display: inline;	
-	list-style-type: none;
-}
-
 .resume .nav {
-	text-align: center;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  overflow: hidden;
+  position: fixed; 
+  background-color: white;
+  top: 0; 
+  width: 60vw; 
+  z-index: 1;
 }
 
-.resume li a {
-	padding-right: 5%;
+.resume .nav-li {
+	display: inline;
+	list-style-type: none;
+	padding: 2%;
+}
+
+.resume a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding-right: 3%;
+  text-decoration: none;
 }
 
 .resume li a:hover {
