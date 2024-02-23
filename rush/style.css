@@ -9,7 +9,6 @@
 .flex-box {
 	display: flex;
 	background-color: #ffafcc;
-	/*  */
 	justify-content: center;
 	padding: 5%;
 }
@@ -23,7 +22,7 @@ body {
 }
 
 a {
-	color: #0563bb;
+	color: #ffafcc;
 	text-decoration: none;
 }
 
@@ -51,7 +50,7 @@ h6 {
 	right: 15px;
 	bottom: 15px;
 	z-index: 996;
-	background: #0563bb;
+	background: #ffafcc;
 	width: 40px;
 	height: 40px;
 	border-radius: 50px;
@@ -93,7 +92,7 @@ h6 {
 	position: fixed;
 	top: calc(50% - 30px);
 	left: calc(50% - 30px);
-	border: 6px solid #0563bb;
+	border: 6px solid #ffafcc;
 	border-top-color: #fff;
 	border-bottom-color: #fff;
 	border-radius: 50%;
@@ -220,7 +219,7 @@ h6 {
 .nav-menu .active:focus,
 .nav-menu li:hover>a {
 	color: #fff;
-	background: #0563bb;
+	background: #ffafcc;
 }
 
 .nav-menu a:hover span,
@@ -274,8 +273,9 @@ h6 {
 
 .mobile-nav-active .mobile-nav-toggle {
 	color: #fff;
-	background-color: #0563bb;
+	background-color: #ffafcc;
 }
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -330,10 +330,27 @@ section {
 # Resume
 --------------------------------------------------------------*/
 
-.margins {
+.countainer {
+	width: 70vw;
+	height: fit-content;
+	margin: auto;
 	padding: 5%;
+	border-radius: 3em;
+	box-shadow: 0px 0px 90px 5px rgba(64, 8, 8, 0.56);
 }
 
+.margin {
+	padding : 1%;
+}
+.resume img {
+	display: inline;
+	width: 20em;
+	/* float: left; */
+}
+
+.resume .img-countainer p {
+	text-align: left;
+}
 .resume .resume-title {
 	font-size: 26px;
 	font-weight: 700;
@@ -345,7 +362,7 @@ section {
 .resume .resume-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
-	border-left: 2px solid #0563bb;
+	border-left: 2px solid #ffafcc;
 	position: relative;
 }
 
@@ -355,7 +372,7 @@ section {
 	font-weight: 600;
 	text-transform: uppercase;
 	font-family: "Poppins", sans-serif;
-	color: #0563bb;
+	color: #ffafcc;
 	margin-bottom: 10px;
 }
 
@@ -389,7 +406,7 @@ section {
 	left: -9px;
 	top: 0;
 	background: #fff;
-	border: 2px solid #0563bb;
+	border: 2px solid #ffafcc;
 }
 
 /*--------------------------------------------------------------
@@ -485,7 +502,7 @@ section {
 #footer .social-links a {
 	font-size: 18px;
 	display: inline-block;
-	background: #0563bb;
+	background: #ffafcc;
 	color: #fff;
 	line-height: 1;
 	padding: 8px 0;
