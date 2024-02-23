@@ -342,6 +342,24 @@ section {
 .margin {
 	padding : 1%;
 }
+
+.resume .nav-li {
+	display: inline;	
+	list-style-type: none;
+}
+
+.resume .nav {
+	text-align: center;
+}
+
+.resume li a {
+	padding-right: 5%;
+}
+
+.resume li a:hover {
+	color :palevioletred;
+}
+
 .resume img {
 	display: inline;
 	width: 20em;
